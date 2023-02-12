@@ -1,0 +1,12 @@
+{
+  "name": "link-following",
+  "version": "1.0.0",
+  "description": "Link following project with twillo sms",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shohan",
+  "license": "ISC"
+}
