@@ -4,7 +4,8 @@
   "description": "Link following project with twillo sms",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon start",
+    "start": "SET NODE_ENV=development & nodemon start",
+    "production": "SET NODE_ENV=production & nodemon start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "shohan",

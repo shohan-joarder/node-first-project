@@ -2,19 +2,21 @@
 
 const http = require("http");
 const {handleReqRes} = require("./helpers/handleReqRes")
+const environment = require("./helpers/environment");
+const data = require("./lib/data");
 
 const app = {}
 
-app.config = {
-    port:3000
-}
-
+// test library
+data.delete('test','new-file',(err)=>{
+    console.log("error was "+ err)
+})
 
 // create server
 app.createServer = () =>{
     const server = http.createServer(app.handleReqRes);
-    server.listen(app.config.port,()=>{
-        console.log(`Listening to ${app.config.port}`)
+    server.listen(environment.port,()=>{
+        console.log(`Listening to ${environment.port}`);
     });
 }
 
